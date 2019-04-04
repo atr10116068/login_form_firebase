@@ -2,15 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/hitam"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_marginLeft="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="100dp"
         android:gravity="center"
         android:text="Login to your account"
@@ -31,15 +32,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp">
+            android:layout_marginRight="30dp"
+            android:textColorHint="@color/colorPrimaryDark">
 
             <EditText
                 android:id="@+id/ETusername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Username"
-                android:textColor="@color/putih"
-                android:textColorHint="@color/putih" />
+                android:textColor="@color/colorPrimary" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -47,35 +48,37 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp">
+            android:layout_marginRight="30dp"
+            android:textColorHint="@color/colorPrimaryDark">
 
             <EditText
                 android:id="@+id/ETpassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
-                android:textColor="@color/putih"
-                android:textColorHint="@color/putih"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimary" />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_margin="30dp"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="horizontal">
+
         <Button
-            android:onClick="msk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="msk"
             android:text="LOG IN" />
+
         <TextView
-            android:onClick="regis"
-            android:textColor="@color/colorAccent"
-            android:layout_marginLeft="110dp"
-            android:text="Create Account?"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:onClick="regis"
+            android:text="Create Account?"
+            android:textColor="@color/colorAccent" />
     </LinearLayout>
 </LinearLayout>

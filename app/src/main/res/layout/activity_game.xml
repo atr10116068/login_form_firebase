@@ -4,16 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/hitam"
     android:orientation="vertical"
     tools:context=".Game">
 
-    <TextView
-        android:id="@+id/p-detail"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:hint="detail"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="PROFILE"
+            android:textColor="@color/putih"
+            android:textColorHint="@color/putih"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nama : "
+                android:textColor="@color/putih"
+                android:textColorHint="@color/putih"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/vNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="vNama"
+                android:textColor="@color/putih"
+                android:textColorHint="@color/putih"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="High Score : "
+                android:textColor="@color/putih"
+                android:textColorHint="@color/putih"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/vhighScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="vhighScore"
+                android:textColor="@color/putih"
+                android:textColorHint="@color/putih"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

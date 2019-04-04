@@ -2,6 +2,15 @@ package com.example.wakhid.appfirebase;
 
 public class Value {
     String username,nama,password;
+    int highScore;
+
+    public int getHighScore() {
+        return highScore;
+    }
+
+    public void setHighScore(int highScore) {
+        this.highScore = highScore;
+    }
 
     public Value(){
     }
